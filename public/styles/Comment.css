@@ -1,0 +1,42 @@
+.event-comments {
+  width:90%;
+  margin:3.125rem auto;
+}
+
+.comments-counter {
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(201, 206, 207);
+}
+
+.comments-wrapper {
+  position: relative;
+  text-align: left;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(201, 206, 207);
+}
+
+.comment-number {
+  position: absolute;
+  top:10px;
+  right: 10px;
+  font-size: 1.1rem;
+  color: rgb(115, 117, 117);
+}
+
+.comment-author {
+  font-size: 1.4rem;
+  line-height: 0.8rem;
+  font-weight: 700;
+}
+
+.comment-date {
+  font-size: 0.8rem;
+  color: rgb(115, 117, 117);
+}
+
+.comment-data {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}

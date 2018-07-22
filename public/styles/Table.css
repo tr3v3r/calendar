@@ -1,0 +1,161 @@
+.table-wrapper {
+  position: relative;
+}
+
+table {
+  position: relative;
+  width: 90%;
+  margin:auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.table-btn {
+  display: inline-block;
+  position: absolute;
+  top:40px;
+  bottom:0;
+  width: 5%;
+  font-size: 5rem;
+  font-weight: 100;
+  color:#585858;
+  cursor:pointer;
+}
+
+.table-btn i {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+.table-btn:hover {
+  background: linear-gradient(to top,rgb(251, 255, 244) 5%, #c7c7c7 46%, rgb(251, 255, 244) 92%);
+}
+.table-left-btn {
+  left:0;
+}
+
+.table-right-btn {
+  right:0;
+}
+
+thead th {
+  height: 40px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+tr {
+  border-bottom: 3px double #585858;
+}
+
+td {
+  height: 110px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.not-this-month-ceil {
+  opacity: 0.5;
+}
+
+.current-date-ceil .ceil-events-wrapper {
+  border: 2px dashed #000;
+}
+
+.ceil-events-wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.fullfilled-ceil-events-wrapper {
+  background: #FEDB1D;
+}
+
+.empty-ceil .ceil-date {
+  left: 50%;
+  top: 50%;
+  display:inline !important;
+  font-size: 1.5rem;
+  width: auto;
+  height: auto;
+  background: transparent;
+  font-weight: 300;
+  color:#000;
+  transform: translate(-50%,-50%);
+}
+
+.empty-ceil {
+  transition: background .1s;
+}
+
+.empty-ceil:hover {
+  background: rgb(220, 214, 214);
+}
+
+.ceil-date {
+position: absolute;
+z-index: 99999;
+}
+
+.week-view-event-details {
+  width: 90%;
+  margin:auto;
+  height: 550px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  border-bottom: 3px double #585858;
+  transition: height .6s;
+}
+
+.week-view-event-details .container {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  thead th {
+    height: 25px;
+    font-size: 1rem;
+  }
+
+  .ceil-date {
+    line-height:1rem;
+    font-size: 0.8rem;
+    color:#fff;
+    left: 2px;
+    top:1px;
+  }
+
+  .empty-ceil .ceil-date {
+    font-size: 1.2rem;
+    font-weight: 100;
+
+  }
+
+    .week-view-event-details {
+      width:100%;
+    }
+}
+
+@media (min-width: 769px) {
+  .ceil-date {
+  display: block;
+  text-align: center;
+  left: -17px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transform: rotate(-45deg);
+  width: 45px;
+  height: 18px;
+  background: #fff;
+  }
+
+}

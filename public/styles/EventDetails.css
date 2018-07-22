@@ -1,0 +1,239 @@
+.event-details {
+  font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.event-details h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.headline-background {
+    position: relative;
+    z-index: 1;
+    margin: 2rem 0;
+}
+
+.headline-background:before {
+        border-top: 3px double #767771;
+        content:"";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        z-index: -1;
+}
+
+.headline-background span {
+        background: rgb(251, 255, 244);
+        padding: 0 15px;
+}
+
+.event-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.event-type {
+  text-transform: capitalize;
+}
+
+.event-date {
+  font-size: 1.3rem;
+}
+.event-deadline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(241, 75, 95);
+}
+
+.event-requirements {
+  line-height: 1.8rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.event-time-gap {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.presentation-and-video {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.presentation-and-video-item {
+  flex-basis:12.5rem;
+  flex-grow: 1;
+  padding: 1.4rem;
+  font-size: 1rem;
+  margin: 0 2rem;
+  text-decoration:none;
+  border:2px solid rgb(203, 211, 207);
+  color: #333;
+  transition: background .2s;
+}
+
+.presentation-and-video-item:hover {
+  background: rgb(203, 211, 207) ;
+}
+
+.presentation-and-video-item i {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.event-speaker {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.event-speaker h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.event-speaker img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.event-resources {
+  display:block;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  color:black;
+  margin-bottom: 1rem;
+  background: rgb(173, 245, 255);
+  transition: box-shadow .2s, transform .2s;
+  border-radius: 2px;
+}
+
+.event-resources:hover {
+  box-shadow: 7px 7px 10px 1px gray;
+  transform:scale(1.01);
+}
+
+.event-details-map {
+  width: 100%;
+  height: 300px;
+}
+
+.feedback-wrapper {
+  margin-bottom: 150px;
+}
+
+.feedback-form {
+  width: 90%;
+  margin:auto;
+
+}
+
+.feedback-form label {
+  float:left;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.feedback-form textarea, .feedback-form input  {
+  display:block;
+  border:1px solid #141414;
+  border-radius: 2px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+  padding:5px;
+}
+
+.feedback-form textarea::-webkit-input-placeholder {
+    text-transform: uppercase;
+}
+
+.feedback-form input::-webkit-input-placeholder {
+    text-transform: uppercase;
+}
+
+.feedback-form textarea {
+  height: 100px;
+}
+
+.feedback-form input {
+  height: 30px;
+}
+
+.feedback-form textarea:focus, .feedback-form input:focus {
+  outline: none;
+  box-shadow: 0 0 7px gray;
+}
+
+.feedback-form button {
+  float:left;
+  margin-top: 10px;
+  width: 100px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: 2px solid #141414;
+  padding: 5px;
+  background: rgb(251, 255, 244);
+  font-weight:700;
+  cursor:pointer;
+  transition: all .2s;
+
+}
+
+.feedback-form button:hover {
+  background: #141414;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .event-details {
+    padding: 0 10px;
+  }
+
+  .headline-background {
+      position: relative;
+      z-index: 1;
+      margin: 1rem 0;
+  }
+
+  .presentation-and-video-item {
+    padding:5px;
+    margin: 5px 0;
+  }
+  .event-resources {
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-details-map {
+    width: 100%;
+    height: 180px;
+  }
+
+  .event-speaker img {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .event-speaker {
+    margin:0 5px;
+  }
+
+
+
+}

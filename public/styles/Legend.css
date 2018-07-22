@@ -1,0 +1,45 @@
+.legend-sidebar {
+  position: absolute;
+  display: inline-block;
+  width: 150px;
+  background: #112233;
+  color:#F0F1F5;
+  z-index: 999999;
+  top:50px;
+  left:0;
+  transition: left 0.3s;
+}
+
+.legend-invisible {
+  left: -150px !important;
+}
+
+.legend-element  {
+  width:100%;
+  margin: 10px 0;
+}
+
+.legend-short,
+.legend-icon,
+.legend-long {
+  display:inline-block;
+  text-align:center;
+}
+
+.legend-short {
+  width: 25%;
+}
+
+.legend-icon {
+  width: 25%;
+}
+
+.legend-long {
+  width: 50%;
+}
+
+@media (min-width: 769px) {
+  .legend-sidebar {
+    display: none;
+  }
+}

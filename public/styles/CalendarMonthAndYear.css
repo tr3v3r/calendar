@@ -1,0 +1,31 @@
+.calendar-month-and-year {
+  text-align: right;
+  font-size: 5rem;
+  color: #585858;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+.calendar-month-and-year span  {
+  padding-left: 2rem;
+  font-weight: 200;
+}
+
+@media (max-width:768px) {
+  .calendar-month-and-year {
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left:55%;
+    margin:0;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    line-height: 1rem;
+    color: rgb(251, 255, 244);
+  }
+
+  .calendar-month-and-year span  {
+    padding-left: 0.5rem;
+    font-weight: 200;
+  }
+}
